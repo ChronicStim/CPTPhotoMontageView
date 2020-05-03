@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="whP-gf-Uak">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,8 +19,77 @@
                     <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lO5-Ez-XJr">
+                                <rect key="frame" x="94" y="78" width="187.5" height="72"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="5" minValue="0.0" maxValue="24" translatesAutoresizingMaskIntoConstraints="NO" id="fuh-Wr-1r0">
+                                <rect key="frame" x="92" y="180" width="191.5" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nhV-82-Rtk"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="countSliderValueChanged:" destination="whP-gf-Uak" eventType="valueChanged" id="deW-6V-5oi"/>
+                                </connections>
+                            </slider>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sHm-j6-arV">
+                                <rect key="frame" x="94" y="240" width="187.5" height="187.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sHm-j6-arV" secondAttribute="height" id="4ni-yI-ecD"/>
+                                </constraints>
+                                <collectionViewLayout key="collectionViewLayout" id="oLf-NN-sA6" customClass="CPTMontageFlowLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CPTCollectionViewCell" id="bna-HF-3gc" customClass="CPTCollectionViewCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="hSx-WT-8Z7">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nMj-MV-CxW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="nMj-MV-CxW" firstAttribute="width" secondItem="hSx-WT-8Z7" secondAttribute="width" id="AyS-h9-XkM"/>
+                                                <constraint firstItem="nMj-MV-CxW" firstAttribute="height" secondItem="hSx-WT-8Z7" secondAttribute="height" id="GRC-An-gGL"/>
+                                                <constraint firstItem="nMj-MV-CxW" firstAttribute="centerX" secondItem="hSx-WT-8Z7" secondAttribute="centerX" id="LUp-Ae-FWh"/>
+                                                <constraint firstItem="nMj-MV-CxW" firstAttribute="centerY" secondItem="hSx-WT-8Z7" secondAttribute="centerY" id="Ox0-wm-97O"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageView" destination="nMj-MV-CxW" id="CC5-51-Dvi"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="whP-gf-Uak" id="J2R-J2-2Qg"/>
+                                    <outlet property="delegate" destination="whP-gf-Uak" id="250-RH-x5M"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="fuh-Wr-1r0" firstAttribute="top" secondItem="lO5-Ez-XJr" secondAttribute="bottom" constant="30" id="5Bf-6v-7ig"/>
+                            <constraint firstItem="fuh-Wr-1r0" firstAttribute="width" secondItem="sHm-j6-arV" secondAttribute="width" id="LQS-Ub-sPY"/>
+                            <constraint firstItem="fuh-Wr-1r0" firstAttribute="centerX" secondItem="sHm-j6-arV" secondAttribute="centerX" id="N6l-IU-0c1"/>
+                            <constraint firstItem="sHm-j6-arV" firstAttribute="top" secondItem="fuh-Wr-1r0" secondAttribute="bottom" constant="30" id="g9s-lv-4fZ"/>
+                            <constraint firstItem="sHm-j6-arV" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="iOV-OP-wtJ"/>
+                            <constraint firstItem="lO5-Ez-XJr" firstAttribute="centerX" secondItem="fuh-Wr-1r0" secondAttribute="centerX" id="kSq-0y-RrC"/>
+                            <constraint firstItem="lO5-Ez-XJr" firstAttribute="width" secondItem="fuh-Wr-1r0" secondAttribute="width" id="oiG-y7-TDJ"/>
+                            <constraint firstItem="sHm-j6-arV" firstAttribute="width" secondItem="TpU-gO-2f1" secondAttribute="width" multiplier="0.5" id="xe9-G9-A3F"/>
+                            <constraint firstItem="sHm-j6-arV" firstAttribute="centerY" secondItem="TpU-gO-2f1" secondAttribute="centerY" id="yco-f4-Zeu"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="sHm-j6-arV" id="H6D-gL-E2n"/>
+                        <outlet property="countLabel" destination="lO5-Ez-XJr" id="6c9-Ce-IHH"/>
+                        <outlet property="countSlider" destination="fuh-Wr-1r0" id="85N-pm-WAy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
