@@ -1,0 +1,16 @@
+PODS:
+  - CPTPhotoMontageView (0.1.0)
+
+DEPENDENCIES:
+  - CPTPhotoMontageView (from `../`)
+
+EXTERNAL SOURCES:
+  CPTPhotoMontageView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CPTPhotoMontageView: 90ebed1b9bc9a7429efeb91a93ee2443c3ce35da
+
+PODFILE CHECKSUM: 382824c00eab8c2fe406b08356c3ad308bb9d8ce
+
+COCOAPODS: 1.9.0.beta.3

@@ -1,0 +1,772 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		125D8587688B4040216935E1FB08F126 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = EB6DFECFB296392578355D73B7D2B81A /* ReplaceMe.m */; };
+		521CC4653D526E54BEAC3AC26E85FEBC /* Pods-CPTPhotoMontageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF22B739F114A4D5D317552902A01F81 /* Pods-CPTPhotoMontageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57CA335241BDD69D99ACF308385926E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		63DEF5A77E7B527E74235FAD94410124 /* Pods-CPTPhotoMontageView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 51141B833540165EB55DB2479165C873 /* Pods-CPTPhotoMontageView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7262625BF798D04F7043A7E1DD7E9773 /* CPTPhotoMontageView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 44E8A99C02E6F8DCF77B72DB16261A3B /* CPTPhotoMontageView-dummy.m */; };
+		A9E6EF510D964F27AEF9AA2943711885 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		AB98AE48D39A8677922DE71117F09342 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		C3CDC3E30474D47F0BE32AB31B5B4AF7 /* Pods-CPTPhotoMontageView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FEA1D99A87ACF95689E79EA00B14DD26 /* Pods-CPTPhotoMontageView_Example-dummy.m */; };
+		D781223FBCC5FABBCB63A8D374748274 /* CPTPhotoMontageView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6A4E8C276CE9C0B3E6B9F5AF5D3DBCF /* CPTPhotoMontageView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAADA1843709EF0AF850345F08C4A28D /* Pods-CPTPhotoMontageView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E7000B410E55AEF2C25E2B9D648BFB3 /* Pods-CPTPhotoMontageView_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1AEFD06A824794BC064E925FD0F93DA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9341C362B7A7611285061EB421BC279F;
+			remoteInfo = CPTPhotoMontageView;
+		};
+		4D986B8181F64D967B981FA3D77C661B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E15DF6FA3EF254917FB6E09DD05A65E;
+			remoteInfo = "Pods-CPTPhotoMontageView_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1622D2FE9BAA74F4B71559983A2039F2 /* Pods-CPTPhotoMontageView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CPTPhotoMontageView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1850366788C621F5D12354B59B3D075E /* Pods-CPTPhotoMontageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		2180326B09D03340FBADA3AF16E3AAE1 /* Pods-CPTPhotoMontageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2619D1EA179C490DB6F798CE277AD176 /* Pods-CPTPhotoMontageView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Example-Info.plist"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38A24197775B2AEAFADE89D88DDB9D6A /* CPTPhotoMontageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPTPhotoMontageView.debug.xcconfig; sourceTree = "<group>"; };
+		395B8FADB8490983A20B909D3DF1E4CD /* Pods-CPTPhotoMontageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPTPhotoMontageView_Example.modulemap"; sourceTree = "<group>"; };
+		3D92E8386DDED096D6B1E4484708D4D8 /* Pods-CPTPhotoMontageView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Tests-Info.plist"; sourceTree = "<group>"; };
+		3E7000B410E55AEF2C25E2B9D648BFB3 /* Pods-CPTPhotoMontageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPTPhotoMontageView_Tests-dummy.m"; sourceTree = "<group>"; };
+		44E8A99C02E6F8DCF77B72DB16261A3B /* CPTPhotoMontageView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CPTPhotoMontageView-dummy.m"; sourceTree = "<group>"; };
+		51141B833540165EB55DB2479165C873 /* Pods-CPTPhotoMontageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CPTPhotoMontageView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		51A46E67BEEDC44BA5185A4C35D5D612 /* Pods_CPTPhotoMontageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CPTPhotoMontageView_Example.framework; path = "Pods-CPTPhotoMontageView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF8F84C57F68BEA634F973EBE154322 /* Pods-CPTPhotoMontageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPTPhotoMontageView_Tests.modulemap"; sourceTree = "<group>"; };
+		6E69604B4F6B5CDD86225BAD4D580658 /* Pods-CPTPhotoMontageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8888BDC09E486D8708C89AB4B2C37632 /* CPTPhotoMontageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPTPhotoMontageView-prefix.pch"; sourceTree = "<group>"; };
+		953040AC114E94F313F7EB8DAD677D08 /* Pods_CPTPhotoMontageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CPTPhotoMontageView_Tests.framework; path = "Pods-CPTPhotoMontageView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A68BE36E9A06433A954DBEAADD79EC1D /* CPTPhotoMontageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CPTPhotoMontageView.modulemap; sourceTree = "<group>"; };
+		A7AC0AB867EF4BAB121E95E2CAFE0790 /* CPTPhotoMontageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CPTPhotoMontageView.framework; path = CPTPhotoMontageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B105F311AB57B54EDA4EAE894D873005 /* CPTPhotoMontageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CPTPhotoMontageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B87493FD7013FE7B89FA52648BFC20F8 /* Pods-CPTPhotoMontageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C1F1FA3760A6F1E76BAEAE809B49C730 /* Pods-CPTPhotoMontageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		C56010194F6C225E900892A847B39A91 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		C811A2E83E2DF34CDBE07743C1A6DF62 /* Pods-CPTPhotoMontageView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPTPhotoMontageView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		C830979C0D8AFC5362FF19265734FF2E /* Pods-CPTPhotoMontageView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CPTPhotoMontageView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D25984F12676E07030917DDBBB8D0380 /* Pods-CPTPhotoMontageView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		D7A2A14A6BC5D2389B89566675D6629E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DF22B739F114A4D5D317552902A01F81 /* Pods-CPTPhotoMontageView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CPTPhotoMontageView_Example-umbrella.h"; sourceTree = "<group>"; };
+		EB6DFECFB296392578355D73B7D2B81A /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReplaceMe.m; path = CPTPhotoMontageView/Classes/ReplaceMe.m; sourceTree = "<group>"; };
+		F2CA2F6696FDF0E94DC2814A9D08BE0C /* CPTPhotoMontageView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CPTPhotoMontageView-Info.plist"; sourceTree = "<group>"; };
+		F52440FD5CBDFC0E8BA884EF6191FB6C /* CPTPhotoMontageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPTPhotoMontageView.release.xcconfig; sourceTree = "<group>"; };
+		F6A4E8C276CE9C0B3E6B9F5AF5D3DBCF /* CPTPhotoMontageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPTPhotoMontageView-umbrella.h"; sourceTree = "<group>"; };
+		FEA1D99A87ACF95689E79EA00B14DD26 /* Pods-CPTPhotoMontageView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPTPhotoMontageView_Example-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C2A116B75DC585DD1EFB123E9FA58E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9E6EF510D964F27AEF9AA2943711885 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50DDBE2A228366F5D90DFF0B34C6A0EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB98AE48D39A8677922DE71117F09342 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5B01DABE9990304EE78FA2F7D364B1D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				57CA335241BDD69D99ACF308385926E8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		268189B48861E31C7B01A0FC99A1393C /* Pods-CPTPhotoMontageView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				5CF8F84C57F68BEA634F973EBE154322 /* Pods-CPTPhotoMontageView_Tests.modulemap */,
+				C830979C0D8AFC5362FF19265734FF2E /* Pods-CPTPhotoMontageView_Tests-acknowledgements.markdown */,
+				1850366788C621F5D12354B59B3D075E /* Pods-CPTPhotoMontageView_Tests-acknowledgements.plist */,
+				3E7000B410E55AEF2C25E2B9D648BFB3 /* Pods-CPTPhotoMontageView_Tests-dummy.m */,
+				3D92E8386DDED096D6B1E4484708D4D8 /* Pods-CPTPhotoMontageView_Tests-Info.plist */,
+				51141B833540165EB55DB2479165C873 /* Pods-CPTPhotoMontageView_Tests-umbrella.h */,
+				C1F1FA3760A6F1E76BAEAE809B49C730 /* Pods-CPTPhotoMontageView_Tests.debug.xcconfig */,
+				B87493FD7013FE7B89FA52648BFC20F8 /* Pods-CPTPhotoMontageView_Tests.release.xcconfig */,
+			);
+			name = "Pods-CPTPhotoMontageView_Tests";
+			path = "Target Support Files/Pods-CPTPhotoMontageView_Tests";
+			sourceTree = "<group>";
+		};
+		2D3A4F695B0B7C24A86CA5F6911DE9E7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				904B991449B59904B84A7100B53315DF /* Pods-CPTPhotoMontageView_Example */,
+				268189B48861E31C7B01A0FC99A1393C /* Pods-CPTPhotoMontageView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		337C9063C8A6C9165C72297A86B5D7EB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A68BE36E9A06433A954DBEAADD79EC1D /* CPTPhotoMontageView.modulemap */,
+				44E8A99C02E6F8DCF77B72DB16261A3B /* CPTPhotoMontageView-dummy.m */,
+				F2CA2F6696FDF0E94DC2814A9D08BE0C /* CPTPhotoMontageView-Info.plist */,
+				8888BDC09E486D8708C89AB4B2C37632 /* CPTPhotoMontageView-prefix.pch */,
+				F6A4E8C276CE9C0B3E6B9F5AF5D3DBCF /* CPTPhotoMontageView-umbrella.h */,
+				38A24197775B2AEAFADE89D88DDB9D6A /* CPTPhotoMontageView.debug.xcconfig */,
+				F52440FD5CBDFC0E8BA884EF6191FB6C /* CPTPhotoMontageView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/CPTPhotoMontageView";
+			sourceTree = "<group>";
+		};
+		41188CFEDB5CAE892536B3D219671915 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7AC0AB867EF4BAB121E95E2CAFE0790 /* CPTPhotoMontageView.framework */,
+				51A46E67BEEDC44BA5185A4C35D5D612 /* Pods_CPTPhotoMontageView_Example.framework */,
+				953040AC114E94F313F7EB8DAD677D08 /* Pods_CPTPhotoMontageView_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E1ECE702CE6E45192ADE507FA219D56 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				B105F311AB57B54EDA4EAE894D873005 /* CPTPhotoMontageView.podspec */,
+				C56010194F6C225E900892A847B39A91 /* LICENSE */,
+				D7A2A14A6BC5D2389B89566675D6629E /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		904B991449B59904B84A7100B53315DF /* Pods-CPTPhotoMontageView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				395B8FADB8490983A20B909D3DF1E4CD /* Pods-CPTPhotoMontageView_Example.modulemap */,
+				1622D2FE9BAA74F4B71559983A2039F2 /* Pods-CPTPhotoMontageView_Example-acknowledgements.markdown */,
+				D25984F12676E07030917DDBBB8D0380 /* Pods-CPTPhotoMontageView_Example-acknowledgements.plist */,
+				FEA1D99A87ACF95689E79EA00B14DD26 /* Pods-CPTPhotoMontageView_Example-dummy.m */,
+				C811A2E83E2DF34CDBE07743C1A6DF62 /* Pods-CPTPhotoMontageView_Example-frameworks.sh */,
+				2619D1EA179C490DB6F798CE277AD176 /* Pods-CPTPhotoMontageView_Example-Info.plist */,
+				DF22B739F114A4D5D317552902A01F81 /* Pods-CPTPhotoMontageView_Example-umbrella.h */,
+				2180326B09D03340FBADA3AF16E3AAE1 /* Pods-CPTPhotoMontageView_Example.debug.xcconfig */,
+				6E69604B4F6B5CDD86225BAD4D580658 /* Pods-CPTPhotoMontageView_Example.release.xcconfig */,
+			);
+			name = "Pods-CPTPhotoMontageView_Example";
+			path = "Target Support Files/Pods-CPTPhotoMontageView_Example";
+			sourceTree = "<group>";
+		};
+		A0D77BEB01EB01F499363A6CBA09013B /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD89AFD16C089C4CC95313BEF9FEE019 /* CPTPhotoMontageView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		AD89AFD16C089C4CC95313BEF9FEE019 /* CPTPhotoMontageView */ = {
+			isa = PBXGroup;
+			children = (
+				EB6DFECFB296392578355D73B7D2B81A /* ReplaceMe.m */,
+				8E1ECE702CE6E45192ADE507FA219D56 /* Pod */,
+				337C9063C8A6C9165C72297A86B5D7EB /* Support Files */,
+			);
+			name = CPTPhotoMontageView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A0D77BEB01EB01F499363A6CBA09013B /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				41188CFEDB5CAE892536B3D219671915 /* Products */,
+				2D3A4F695B0B7C24A86CA5F6911DE9E7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4D585E4152401EF7567EA2D7D68E90C4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D781223FBCC5FABBCB63A8D374748274 /* CPTPhotoMontageView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0F86B8943B6241579A6456F6F3FC062 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63DEF5A77E7B527E74235FAD94410124 /* Pods-CPTPhotoMontageView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D67415A0AB4E320D9794F0E21EE02401 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				521CC4653D526E54BEAC3AC26E85FEBC /* Pods-CPTPhotoMontageView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E15DF6FA3EF254917FB6E09DD05A65E /* Pods-CPTPhotoMontageView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF65EF4DEFF2F01A35362430ED91121 /* Build configuration list for PBXNativeTarget "Pods-CPTPhotoMontageView_Example" */;
+			buildPhases = (
+				D67415A0AB4E320D9794F0E21EE02401 /* Headers */,
+				E1390FEA96FD669FA870052DFBF4216E /* Sources */,
+				0C2A116B75DC585DD1EFB123E9FA58E1 /* Frameworks */,
+				06FEB675EEE4DED476F22B6C49B066B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09A005B507FCB00F3D3C98F02E725495 /* PBXTargetDependency */,
+			);
+			name = "Pods-CPTPhotoMontageView_Example";
+			productName = "Pods-CPTPhotoMontageView_Example";
+			productReference = 51A46E67BEEDC44BA5185A4C35D5D612 /* Pods_CPTPhotoMontageView_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2983C64CAFC8C0AB3C06EF1168A539FC /* Pods-CPTPhotoMontageView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7690A01E482AAAABEA9B787DC4FB23BC /* Build configuration list for PBXNativeTarget "Pods-CPTPhotoMontageView_Tests" */;
+			buildPhases = (
+				C0F86B8943B6241579A6456F6F3FC062 /* Headers */,
+				B5D86696E1920E30D1D11FAA488D89D4 /* Sources */,
+				F5B01DABE9990304EE78FA2F7D364B1D /* Frameworks */,
+				8CFC917FCECEE34EC495E358ECABD742 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65E39CC75E283FF9B15E6BF73AA7AE21 /* PBXTargetDependency */,
+			);
+			name = "Pods-CPTPhotoMontageView_Tests";
+			productName = "Pods-CPTPhotoMontageView_Tests";
+			productReference = 953040AC114E94F313F7EB8DAD677D08 /* Pods_CPTPhotoMontageView_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9341C362B7A7611285061EB421BC279F /* CPTPhotoMontageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C958BBABB092D26B49556B354F67062A /* Build configuration list for PBXNativeTarget "CPTPhotoMontageView" */;
+			buildPhases = (
+				4D585E4152401EF7567EA2D7D68E90C4 /* Headers */,
+				73EBE722A4CBA222A85F90E2A24FA3D6 /* Sources */,
+				50DDBE2A228366F5D90DFF0B34C6A0EC /* Frameworks */,
+				F614656006160598AF5492AAFF01FAC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CPTPhotoMontageView;
+			productName = CPTPhotoMontageView;
+			productReference = A7AC0AB867EF4BAB121E95E2CAFE0790 /* CPTPhotoMontageView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 41188CFEDB5CAE892536B3D219671915 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9341C362B7A7611285061EB421BC279F /* CPTPhotoMontageView */,
+				1E15DF6FA3EF254917FB6E09DD05A65E /* Pods-CPTPhotoMontageView_Example */,
+				2983C64CAFC8C0AB3C06EF1168A539FC /* Pods-CPTPhotoMontageView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		06FEB675EEE4DED476F22B6C49B066B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CFC917FCECEE34EC495E358ECABD742 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F614656006160598AF5492AAFF01FAC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		73EBE722A4CBA222A85F90E2A24FA3D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7262625BF798D04F7043A7E1DD7E9773 /* CPTPhotoMontageView-dummy.m in Sources */,
+				125D8587688B4040216935E1FB08F126 /* ReplaceMe.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5D86696E1920E30D1D11FAA488D89D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EAADA1843709EF0AF850345F08C4A28D /* Pods-CPTPhotoMontageView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1390FEA96FD669FA870052DFBF4216E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3CDC3E30474D47F0BE32AB31B5B4AF7 /* Pods-CPTPhotoMontageView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09A005B507FCB00F3D3C98F02E725495 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CPTPhotoMontageView;
+			target = 9341C362B7A7611285061EB421BC279F /* CPTPhotoMontageView */;
+			targetProxy = 1AEFD06A824794BC064E925FD0F93DA0 /* PBXContainerItemProxy */;
+		};
+		65E39CC75E283FF9B15E6BF73AA7AE21 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-CPTPhotoMontageView_Example";
+			target = 1E15DF6FA3EF254917FB6E09DD05A65E /* Pods-CPTPhotoMontageView_Example */;
+			targetProxy = 4D986B8181F64D967B981FA3D77C661B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		152235245CA85C7ACCFA8DF23E83CA75 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1F1FA3760A6F1E76BAEAE809B49C730 /* Pods-CPTPhotoMontageView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Tests/Pods-CPTPhotoMontageView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Tests/Pods-CPTPhotoMontageView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2240F5DAFB5C7C6BDD5767A57C43D136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F52440FD5CBDFC0E8BA884EF6191FB6C /* CPTPhotoMontageView.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CPTPhotoMontageView/CPTPhotoMontageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CPTPhotoMontageView/CPTPhotoMontageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CPTPhotoMontageView/CPTPhotoMontageView.modulemap";
+				PRODUCT_MODULE_NAME = CPTPhotoMontageView;
+				PRODUCT_NAME = CPTPhotoMontageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BCA12E6F87CE46845DAAF2246222FF4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E69604B4F6B5CDD86225BAD4D580658 /* Pods-CPTPhotoMontageView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Example/Pods-CPTPhotoMontageView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Example/Pods-CPTPhotoMontageView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4BE66A09A74FD25164AAB3C2645B9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		7EF7227D9B20A1D549000096ACCB23D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		892029063A026B06E75EA4560ABFE685 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2180326B09D03340FBADA3AF16E3AAE1 /* Pods-CPTPhotoMontageView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Example/Pods-CPTPhotoMontageView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Example/Pods-CPTPhotoMontageView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE4650D77B338306818A2DB324010975 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B87493FD7013FE7B89FA52648BFC20F8 /* Pods-CPTPhotoMontageView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Tests/Pods-CPTPhotoMontageView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-CPTPhotoMontageView_Tests/Pods-CPTPhotoMontageView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FAF518B75F2417EAEE97C1366C854369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38A24197775B2AEAFADE89D88DDB9D6A /* CPTPhotoMontageView.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CPTPhotoMontageView/CPTPhotoMontageView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CPTPhotoMontageView/CPTPhotoMontageView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/CPTPhotoMontageView/CPTPhotoMontageView.modulemap";
+				PRODUCT_MODULE_NAME = CPTPhotoMontageView;
+				PRODUCT_NAME = CPTPhotoMontageView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EF7227D9B20A1D549000096ACCB23D7 /* Debug */,
+				4BE66A09A74FD25164AAB3C2645B9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7690A01E482AAAABEA9B787DC4FB23BC /* Build configuration list for PBXNativeTarget "Pods-CPTPhotoMontageView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				152235245CA85C7ACCFA8DF23E83CA75 /* Debug */,
+				EE4650D77B338306818A2DB324010975 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF65EF4DEFF2F01A35362430ED91121 /* Build configuration list for PBXNativeTarget "Pods-CPTPhotoMontageView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				892029063A026B06E75EA4560ABFE685 /* Debug */,
+				4BCA12E6F87CE46845DAAF2246222FF4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C958BBABB092D26B49556B354F67062A /* Build configuration list for PBXNativeTarget "CPTPhotoMontageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAF518B75F2417EAEE97C1366C854369 /* Debug */,
+				2240F5DAFB5C7C6BDD5767A57C43D136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

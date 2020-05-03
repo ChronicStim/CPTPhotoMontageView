@@ -1,0 +1,6 @@
+framework module CPTPhotoMontageView {
+  umbrella header "CPTPhotoMontageView-umbrella.h"
+
+  export *
+  module * { export * }
+}

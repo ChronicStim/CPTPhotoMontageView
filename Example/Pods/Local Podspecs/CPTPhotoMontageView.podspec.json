@@ -1,0 +1,22 @@
+{
+  "name": "CPTPhotoMontageView",
+  "version": "0.1.0",
+  "summary": "A short description of CPTPhotoMontageView.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/support@chronicstimulation.com/CPTPhotoMontageView",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "support@chronicstimulation.com": "support@chronicstimulation.com"
+  },
+  "source": {
+    "git": "https://github.com/support@chronicstimulation.com/CPTPhotoMontageView.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CPTPhotoMontageView/Classes/**/*"
+}
