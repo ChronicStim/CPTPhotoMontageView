@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		29410FFA4EE0BF15CC3C34141438FA5F /* CPTMontageFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 350C62349CB57B27CE10E62C49B4FE9A /* CPTMontageFlowLayout.m */; };
-		294148F724603AE500CA7002 /* CPTMontagePosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F524603AE500CA7002 /* CPTMontagePosition.h */; };
+		294148F724603AE500CA7002 /* CPTMontagePosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F524603AE500CA7002 /* CPTMontagePosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		294148F824603AE500CA7002 /* CPTMontagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 294148F624603AE500CA7002 /* CPTMontagePosition.m */; };
-		294148FB24605EF700CA7002 /* CPTMontageGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F924605EF700CA7002 /* CPTMontageGrid.h */; };
+		294148FB24605EF700CA7002 /* CPTMontageGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F924605EF700CA7002 /* CPTMontageGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		294148FC24605EF700CA7002 /* CPTMontageGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 294148FA24605EF700CA7002 /* CPTMontageGrid.m */; };
 		34B56D7A46E9F491BE1C4EC23ECB5EBD /* CPTMontageFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 854304ABEF4EF2D3DAC4A4E1CA0A6681 /* CPTMontageFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50375814B498322DD6FA0DF24A0F3E40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
