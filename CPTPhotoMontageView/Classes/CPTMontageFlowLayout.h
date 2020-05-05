@@ -41,12 +41,6 @@
 // The scroll direction of the grid.
 @property (nonatomic) UICollectionViewScrollDirection scrollDirection;
 
-// Treat the layout as a single section layout with no headers/footers AND force the item sizes to fit within the visible display size of the collectionView (or another provided fixed content size)
-@property (nonatomic, getter=isSingleSectionWithConstrainedContentSize) BOOL singleSectionWithConstrainedContentSize;
-
-// When singleSectionWithConstrainedContentSize == YES, this target size must be provided. During the prepareLayout phase, items will be sized to come as close as possible to filling this defined size while maintaining image aspect ratios. The provided contentSize should include sectionInsets (if any).
-@property (nonatomic) CGSize maximumAllowedContentSize;
-
 @end
 
 

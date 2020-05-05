@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		027F688E9FCD6F99F0D6DC1A73946E16 /* CPTLinearPartition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E4C4B6CCF4036BF4388E5345AEB5C7B /* CPTLinearPartition.m */; };
 		29410FFA4EE0BF15CC3C34141438FA5F /* CPTMontageFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 350C62349CB57B27CE10E62C49B4FE9A /* CPTMontageFlowLayout.m */; };
+		294148F724603AE500CA7002 /* CPTMontagePosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F524603AE500CA7002 /* CPTMontagePosition.h */; };
+		294148F824603AE500CA7002 /* CPTMontagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 294148F624603AE500CA7002 /* CPTMontagePosition.m */; };
+		294148FB24605EF700CA7002 /* CPTMontageGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F924605EF700CA7002 /* CPTMontageGrid.h */; };
+		294148FC24605EF700CA7002 /* CPTMontageGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 294148FA24605EF700CA7002 /* CPTMontageGrid.m */; };
 		34B56D7A46E9F491BE1C4EC23ECB5EBD /* CPTMontageFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 854304ABEF4EF2D3DAC4A4E1CA0A6681 /* CPTMontageFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3DE63DB7B3AC867B665BE4EF7AD3F65F /* CPTLinearPartition.h in Headers */ = {isa = PBXBuildFile; fileRef = FF475C377EA4EFE26C4D06F469381098 /* CPTLinearPartition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50375814B498322DD6FA0DF24A0F3E40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		521CC4653D526E54BEAC3AC26E85FEBC /* Pods-CPTPhotoMontageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF22B739F114A4D5D317552902A01F81 /* Pods-CPTPhotoMontageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57CA335241BDD69D99ACF308385926E8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
@@ -45,27 +47,30 @@
 		1850366788C621F5D12354B59B3D075E /* Pods-CPTPhotoMontageView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		2180326B09D03340FBADA3AF16E3AAE1 /* Pods-CPTPhotoMontageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2619D1EA179C490DB6F798CE277AD176 /* Pods-CPTPhotoMontageView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Example-Info.plist"; sourceTree = "<group>"; };
+		294148F524603AE500CA7002 /* CPTMontagePosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPTMontagePosition.h; path = CPTPhotoMontageView/Classes/CPTMontagePosition.h; sourceTree = "<group>"; };
+		294148F624603AE500CA7002 /* CPTMontagePosition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CPTMontagePosition.m; path = CPTPhotoMontageView/Classes/CPTMontagePosition.m; sourceTree = "<group>"; };
+		294148F924605EF700CA7002 /* CPTMontageGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPTMontageGrid.h; sourceTree = "<group>"; };
+		294148FA24605EF700CA7002 /* CPTMontageGrid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPTMontageGrid.m; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		350C62349CB57B27CE10E62C49B4FE9A /* CPTMontageFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTMontageFlowLayout.m; path = CPTPhotoMontageView/Classes/CPTMontageFlowLayout.m; sourceTree = "<group>"; };
 		395B8FADB8490983A20B909D3DF1E4CD /* Pods-CPTPhotoMontageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPTPhotoMontageView_Example.modulemap"; sourceTree = "<group>"; };
 		3D92E8386DDED096D6B1E4484708D4D8 /* Pods-CPTPhotoMontageView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Tests-Info.plist"; sourceTree = "<group>"; };
 		3E7000B410E55AEF2C25E2B9D648BFB3 /* Pods-CPTPhotoMontageView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPTPhotoMontageView_Tests-dummy.m"; sourceTree = "<group>"; };
 		43D9E515E0EF8933BC99325285CF9B53 /* CPTPhotoMontageView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPTPhotoMontageView-umbrella.h"; sourceTree = "<group>"; };
-		4E4C4B6CCF4036BF4388E5345AEB5C7B /* CPTLinearPartition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTLinearPartition.m; path = CPTPhotoMontageView/Classes/CPTLinearPartition.m; sourceTree = "<group>"; };
 		51141B833540165EB55DB2479165C873 /* Pods-CPTPhotoMontageView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CPTPhotoMontageView_Tests-umbrella.h"; sourceTree = "<group>"; };
-		51A46E67BEEDC44BA5185A4C35D5D612 /* Pods_CPTPhotoMontageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CPTPhotoMontageView_Example.framework; path = "Pods-CPTPhotoMontageView_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51A46E67BEEDC44BA5185A4C35D5D612 /* Pods_CPTPhotoMontageView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPTPhotoMontageView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF8F84C57F68BEA634F973EBE154322 /* Pods-CPTPhotoMontageView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPTPhotoMontageView_Tests.modulemap"; sourceTree = "<group>"; };
 		6E69604B4F6B5CDD86225BAD4D580658 /* Pods-CPTPhotoMontageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		854304ABEF4EF2D3DAC4A4E1CA0A6681 /* CPTMontageFlowLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTMontageFlowLayout.h; path = CPTPhotoMontageView/Classes/CPTMontageFlowLayout.h; sourceTree = "<group>"; };
 		8BAA1528574AD7F4EFC79BA92256BEF7 /* CPTPhotoMontageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPTPhotoMontageView.release.xcconfig; sourceTree = "<group>"; };
 		8C6D47F71E4A244C60B62BDBE3378F6F /* CPTPhotoMontageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CPTPhotoMontageView.debug.xcconfig; sourceTree = "<group>"; };
-		92C3F61852918C12D26AC18E49AB66D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		953040AC114E94F313F7EB8DAD677D08 /* Pods_CPTPhotoMontageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CPTPhotoMontageView_Tests.framework; path = "Pods-CPTPhotoMontageView_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A7AC0AB867EF4BAB121E95E2CAFE0790 /* CPTPhotoMontageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CPTPhotoMontageView.framework; path = CPTPhotoMontageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C3F61852918C12D26AC18E49AB66D5 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		953040AC114E94F313F7EB8DAD677D08 /* Pods_CPTPhotoMontageView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CPTPhotoMontageView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7AC0AB867EF4BAB121E95E2CAFE0790 /* CPTPhotoMontageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CPTPhotoMontageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE4DF4CB13F32E4EAC3147D8321F2CE /* CPTPhotoMontageView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CPTPhotoMontageView.modulemap; sourceTree = "<group>"; };
-		ADA69A2756BA0DD18B0EBE3300CC8736 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		B130C1467A0CF02D12D57C1C79CB301A /* CPTPhotoMontageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CPTPhotoMontageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ADA69A2756BA0DD18B0EBE3300CC8736 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B130C1467A0CF02D12D57C1C79CB301A /* CPTPhotoMontageView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CPTPhotoMontageView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		B87493FD7013FE7B89FA52648BFC20F8 /* Pods-CPTPhotoMontageView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C1F1FA3760A6F1E76BAEAE809B49C730 /* Pods-CPTPhotoMontageView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CPTPhotoMontageView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		C811A2E83E2DF34CDBE07743C1A6DF62 /* Pods-CPTPhotoMontageView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CPTPhotoMontageView_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -75,7 +80,6 @@
 		DF22B739F114A4D5D317552902A01F81 /* Pods-CPTPhotoMontageView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CPTPhotoMontageView_Example-umbrella.h"; sourceTree = "<group>"; };
 		EA8E6DF951605943C4EDB66FD8F2BAC0 /* CPTPhotoMontageView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CPTPhotoMontageView-prefix.pch"; sourceTree = "<group>"; };
 		FEA1D99A87ACF95689E79EA00B14DD26 /* Pods-CPTPhotoMontageView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-CPTPhotoMontageView_Example-dummy.m"; sourceTree = "<group>"; };
-		FF475C377EA4EFE26C4D06F469381098 /* CPTLinearPartition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CPTLinearPartition.h; path = CPTPhotoMontageView/Classes/CPTLinearPartition.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -221,10 +225,12 @@
 		E836686D4912734A680E5DD0E81DFD4F /* CPTPhotoMontageView */ = {
 			isa = PBXGroup;
 			children = (
-				FF475C377EA4EFE26C4D06F469381098 /* CPTLinearPartition.h */,
-				4E4C4B6CCF4036BF4388E5345AEB5C7B /* CPTLinearPartition.m */,
 				854304ABEF4EF2D3DAC4A4E1CA0A6681 /* CPTMontageFlowLayout.h */,
 				350C62349CB57B27CE10E62C49B4FE9A /* CPTMontageFlowLayout.m */,
+				294148F524603AE500CA7002 /* CPTMontagePosition.h */,
+				294148F624603AE500CA7002 /* CPTMontagePosition.m */,
+				294148F924605EF700CA7002 /* CPTMontageGrid.h */,
+				294148FA24605EF700CA7002 /* CPTMontageGrid.m */,
 				9935A6A7263F3B5A8D1C68CB3AD23EE1 /* Pod */,
 				E54F156E75E224E2300E1C512E063891 /* Support Files */,
 			);
@@ -255,7 +261,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DE63DB7B3AC867B665BE4EF7AD3F65F /* CPTLinearPartition.h in Headers */,
+				294148FB24605EF700CA7002 /* CPTMontageGrid.h in Headers */,
+				294148F724603AE500CA7002 /* CPTMontagePosition.h in Headers */,
 				34B56D7A46E9F491BE1C4EC23ECB5EBD /* CPTMontageFlowLayout.h in Headers */,
 				6649E46A451D48A44535C133717B7E31 /* CPTPhotoMontageView-umbrella.h in Headers */,
 			);
@@ -378,8 +385,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				027F688E9FCD6F99F0D6DC1A73946E16 /* CPTLinearPartition.m in Sources */,
+				294148FC24605EF700CA7002 /* CPTMontageGrid.m in Sources */,
 				29410FFA4EE0BF15CC3C34141438FA5F /* CPTMontageFlowLayout.m in Sources */,
+				294148F824603AE500CA7002 /* CPTMontagePosition.m in Sources */,
 				9FDAFE310CA09664F2C73CFBAB4D92FC /* CPTPhotoMontageView-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -569,8 +577,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
