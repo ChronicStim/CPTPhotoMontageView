@@ -64,7 +64,7 @@
 /* Begin PBXFileReference section */
 		08CD6227EB76B23630B90D36 /* Pods-CPTPhotoMontageView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPTPhotoMontageView_Example.debug.xcconfig"; path = "Target Support Files/Pods-CPTPhotoMontageView_Example/Pods-CPTPhotoMontageView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1F49D005F7ED38825E7273D2 /* Pods-CPTPhotoMontageView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CPTPhotoMontageView_Example.release.xcconfig"; path = "Target Support Files/Pods-CPTPhotoMontageView_Example/Pods-CPTPhotoMontageView_Example.release.xcconfig"; sourceTree = "<group>"; };
-		2452544736503A61C02EF943 /* CPTPhotoMontageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CPTPhotoMontageView.podspec; path = ../CPTPhotoMontageView.podspec; sourceTree = "<group>"; };
+		2452544736503A61C02EF943 /* CPTPhotoMontageView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CPTPhotoMontageView.podspec; path = ../CPTPhotoMontageView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29E9C9DE245EF81900B9B414 /* photo-16.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-16.jpg"; sourceTree = "<group>"; };
 		29E9C9DF245EF81900B9B414 /* photo-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-02.jpg"; sourceTree = "<group>"; };
 		29E9C9E0245EF81900B9B414 /* photo-03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-03.jpg"; sourceTree = "<group>"; };

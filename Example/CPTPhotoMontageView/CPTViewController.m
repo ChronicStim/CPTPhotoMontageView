@@ -18,7 +18,7 @@
 #define FOOTER_SIZE 0.0f
 
 @interface CPTViewController ()
-< UICollectionViewDelegate, UICollectionViewDataSource, CPTMontageFlowLayoutDelegate >
+< UICollectionViewDelegate, UICollectionViewDataSource >
 
 @property (nonatomic, assign) NSInteger numberOfImages;
 @property (nonatomic, strong) NSArray *images;
@@ -71,8 +71,6 @@
     layout.sectionInset = UIEdgeInsetsMake(4, 4, 4, 4);
     layout.minimumLineSpacing = 2;
     layout.minimumInteritemSpacing = 2;
-    layout.headerReferenceSize = CGSizeMake(HEADER_SIZE, HEADER_SIZE);
-    layout.footerReferenceSize = CGSizeMake(FOOTER_SIZE, FOOTER_SIZE);
     layout.scrollDirection = UICollectionViewScrollDirectionVertical;
 }
 
@@ -89,13 +87,6 @@
         [self.collectionView.collectionViewLayout invalidateLayout];
         [self.collectionView reloadData];
     }
-}
-
-#pragma mark - CPTMontageFlowLayoutDelegate
-
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(CPTMontageFlowLayout *)collectionViewLayout preferredSizeForItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    return [[self.images objectAtIndex:indexPath.item] size];
 }
 
 #pragma mark - UICollectionView data source
@@ -120,22 +111,6 @@
     
     return cell;
 }
-
-/*
- - (UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath
- {
- UICollectionReusableView *view = nil;
- 
- if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
- view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"HeaderView" forIndexPath:indexPath];
- }
- else if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
- view = [collectionView dequeueReusableSupplementaryViewOfKind:kind withReuseIdentifier:@"FooterView" forIndexPath:indexPath];
- }
- 
- return view;
- }
- */
 
 #pragma mark - UISlider Method
 

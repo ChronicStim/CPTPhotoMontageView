@@ -20,8 +20,6 @@
 
 @property (nonatomic) CGSize contentSize;
 
-@property (nonatomic, strong) NSArray *headerFrames;
-@property (nonatomic, strong) NSArray *footerFrames;
 @property (nonatomic, strong) CPTMontageGrid *montageGrid;
 
 @end
@@ -54,8 +52,6 @@
     self.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
     self.minimumLineSpacing = 10;
     self.minimumInteritemSpacing = 10;
-    self.headerReferenceSize = CGSizeZero;
-    self.footerReferenceSize = CGSizeZero;
     self.scrollDirection = UICollectionViewScrollDirectionVertical;
 }
 
@@ -64,8 +60,6 @@
 - (void)prepareLayout
 {
     [super prepareLayout];
-    
-    NSAssert([self.delegate conformsToProtocol:@protocol(CPTMontageFlowLayoutDelegate)], @"UICollectionView delegate should conform to CPTMontageFlowLayout protocol");
     
     CGSize contentSize = CGSizeZero;
     
@@ -228,12 +222,11 @@
     UICollectionViewLayoutAttributes *attributes = [UICollectionViewLayoutAttributes layoutAttributesForSupplementaryViewOfKind:kind withIndexPath:indexPath];
     
     if ([kind isEqualToString:UICollectionElementKindSectionHeader]) {
-        attributes.frame = [self headerFrameForSection:indexPath.section];
+        attributes.frame = CGRectZero;
     } else if ([kind isEqualToString:UICollectionElementKindSectionFooter]) {
-        attributes.frame = [self footerFrameForSection:indexPath.section];
+        attributes.frame = CGRectZero;
     }
     
-    // If there is no header or footer, we need to return nil to prevent a crash from UICollectionView private methods.
     if(CGRectIsEmpty(attributes.frame)) {
         attributes = nil;
     }
@@ -297,20 +290,10 @@
 
 #pragma mark - Layout helpers
 
-- (CGRect)headerFrameForSection:(NSInteger)section
-{
-    return [[self.headerFrames objectAtIndex:section] CGRectValue];
-}
-
 - (CGRect)itemFrameForIndexPath:(NSIndexPath *)indexPath
 {
     CPTMontagePosition *montagePosition = [self.montageGrid montagePositionForItemIndex:indexPath.item];
     return montagePosition.cellFrame;
-}
-
-- (CGRect)footerFrameForSection:(NSInteger)section
-{
-    return [[self.footerFrames objectAtIndex:section] CGRectValue];
 }
 
 - (CGFloat)viewPortWidth
@@ -334,13 +317,6 @@
 
 #pragma mark - Custom setters
 
-- (void)setPreferredRowSize:(CGFloat)preferredRowHeight
-{
-    _preferredRowSize = preferredRowHeight;
-    
-    [self invalidateLayout];
-}
-
 - (void)setSectionInset:(UIEdgeInsets)sectionInset
 {
     _sectionInset = sectionInset;
@@ -360,27 +336,6 @@
     _minimumInteritemSpacing = minimumInteritemSpacing;
     
     [self invalidateLayout];
-}
-
-- (void)setHeaderReferenceSize:(CGSize)headerReferenceSize
-{
-    _headerReferenceSize = headerReferenceSize;
-    
-    [self invalidateLayout];
-}
-
-- (void)setFooterReferenceSize:(CGSize)footerReferenceSize
-{
-    _footerReferenceSize = footerReferenceSize;
-    
-    [self invalidateLayout];
-}
-
-#pragma mark - Delegate
-
-- (id<CPTMontageFlowLayoutDelegate>)delegate
-{
-    return (id<CPTMontageFlowLayoutDelegate>)self.collectionView.delegate;
 }
 
 #pragma mark - Delegate helpers

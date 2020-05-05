@@ -9,25 +9,13 @@
 #import <UIKit/UIKit.h>
 
 /**
- * The CPTMontageFlowLayout class is designed to display items of different sizes and aspect ratios in a grid, without wasting any visual space.
- * It takes the preferred sizes for the displayed items and a preferred row height as input to determine the optimal layout.
- *
- * In order to use this layout, the delegate for the collection view must implement the required methods in the CPTMontageFlowLayoutDelegate protocol.
- * Currently this class does not support supplementary or decoration views.
+ * The CPTMontageFlowLayout class is designed to display photos in a defined view bounds. Within the provided space, the layout will determine the appropriate cell size to maximize the space usage for the given number of photos.
+ * Cells are arranged in rows & columns. Row height is consistent, but column width per row will vary depending on the number of cells to be displayed in the row.
+ * The effect is a fully utilized collectionView bounds area whether you are displaying 1 or 100 photos.
+ * The Layout currently supports a single section. Header & Footer views are not supported.
  *
  */
 @interface CPTMontageFlowLayout : UICollectionViewLayout
-
-// The preferred size for each row measured in the scroll direction
-@property (nonatomic) CGFloat preferredRowSize;
-
-// The size of each section's header. This maybe dynamically adjusted
-// per section via the protocol method referenceSizeForHeaderInSection.
-@property (nonatomic) CGSize headerReferenceSize;
-
-// The size of each section's header. This maybe dynamically adjusted
-// per section via the protocol method referenceSizeForFooterInSection.
-@property (nonatomic) CGSize footerReferenceSize;
 
 // The margins used to lay out content in a section.
 @property (nonatomic) UIEdgeInsets sectionInset;
@@ -40,13 +28,5 @@
 
 // The scroll direction of the grid.
 @property (nonatomic) UICollectionViewScrollDirection scrollDirection;
-
-@end
-
-
-@protocol CPTMontageFlowLayoutDelegate <UICollectionViewDelegateFlowLayout>
-
-@required
-- (CGSize)collectionView:(UICollectionView *)collectionView layout:(CPTMontageFlowLayout *)collectionViewLayout preferredSizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 
 @end
