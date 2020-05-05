@@ -19,11 +19,11 @@ Pod::Spec.new do |s|
 
   s.description      = 'The CPTMontageFlowLayout class is designed to display photos in a defined view bounds. Within the provided space, the layout will determine the appropriate cell size to maximize the space usage for the given number of photos. Cells are arranged in rows & columns. Row height is consistent, but column width per row will vary depending on the number of cells to be displayed in the row. The effect is a fully utilized collectionView bounds area whether you are displaying 1 or 100 photos. The Layout currently supports a single section. Header & Footer views are not supported.'
 
-  s.homepage         = 'https://github.com/support@chronicstimulation.com/CPTPhotoMontageView'
+  s.homepage         = 'https://github.com/ChronicStim/CPTPhotoMontageView.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'support@chronicstimulation.com' => 'support@chronicstimulation.com' }
-  s.source           = { :git => 'https://github.com/support@chronicstimulation.com/CPTPhotoMontageView.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ChronicStim/CPTPhotoMontageView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
