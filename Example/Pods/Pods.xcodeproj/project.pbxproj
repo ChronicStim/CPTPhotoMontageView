@@ -10,8 +10,8 @@
 		29410FFA4EE0BF15CC3C34141438FA5F /* CPTMontageFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 350C62349CB57B27CE10E62C49B4FE9A /* CPTMontageFlowLayout.m */; };
 		294148F724603AE500CA7002 /* CPTMontagePosition.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F524603AE500CA7002 /* CPTMontagePosition.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		294148F824603AE500CA7002 /* CPTMontagePosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 294148F624603AE500CA7002 /* CPTMontagePosition.m */; };
-		294148FB24605EF700CA7002 /* CPTMontageGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 294148F924605EF700CA7002 /* CPTMontageGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		294148FC24605EF700CA7002 /* CPTMontageGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 294148FA24605EF700CA7002 /* CPTMontageGrid.m */; };
+		294149032461A2C800CA7002 /* CPTMontageGrid.m in Sources */ = {isa = PBXBuildFile; fileRef = 294149012461A2C800CA7002 /* CPTMontageGrid.m */; };
+		294149042461A2C800CA7002 /* CPTMontageGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 294149022461A2C800CA7002 /* CPTMontageGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		34B56D7A46E9F491BE1C4EC23ECB5EBD /* CPTMontageFlowLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = 854304ABEF4EF2D3DAC4A4E1CA0A6681 /* CPTMontageFlowLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		50375814B498322DD6FA0DF24A0F3E40 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 		521CC4653D526E54BEAC3AC26E85FEBC /* Pods-CPTPhotoMontageView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DF22B739F114A4D5D317552902A01F81 /* Pods-CPTPhotoMontageView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,8 +49,8 @@
 		2619D1EA179C490DB6F798CE277AD176 /* Pods-CPTPhotoMontageView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CPTPhotoMontageView_Example-Info.plist"; sourceTree = "<group>"; };
 		294148F524603AE500CA7002 /* CPTMontagePosition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CPTMontagePosition.h; path = CPTPhotoMontageView/Classes/CPTMontagePosition.h; sourceTree = "<group>"; };
 		294148F624603AE500CA7002 /* CPTMontagePosition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = CPTMontagePosition.m; path = CPTPhotoMontageView/Classes/CPTMontagePosition.m; sourceTree = "<group>"; };
-		294148F924605EF700CA7002 /* CPTMontageGrid.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CPTMontageGrid.h; sourceTree = "<group>"; };
-		294148FA24605EF700CA7002 /* CPTMontageGrid.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CPTMontageGrid.m; sourceTree = "<group>"; };
+		294149012461A2C800CA7002 /* CPTMontageGrid.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CPTMontageGrid.m; path = CPTPhotoMontageView/Classes/CPTMontageGrid.m; sourceTree = "<group>"; };
+		294149022461A2C800CA7002 /* CPTMontageGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CPTMontageGrid.h; path = CPTPhotoMontageView/Classes/CPTMontageGrid.h; sourceTree = "<group>"; };
 		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		350C62349CB57B27CE10E62C49B4FE9A /* CPTMontageFlowLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CPTMontageFlowLayout.m; path = CPTPhotoMontageView/Classes/CPTMontageFlowLayout.m; sourceTree = "<group>"; };
 		395B8FADB8490983A20B909D3DF1E4CD /* Pods-CPTPhotoMontageView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CPTPhotoMontageView_Example.modulemap"; sourceTree = "<group>"; };
@@ -229,8 +229,8 @@
 				350C62349CB57B27CE10E62C49B4FE9A /* CPTMontageFlowLayout.m */,
 				294148F524603AE500CA7002 /* CPTMontagePosition.h */,
 				294148F624603AE500CA7002 /* CPTMontagePosition.m */,
-				294148F924605EF700CA7002 /* CPTMontageGrid.h */,
-				294148FA24605EF700CA7002 /* CPTMontageGrid.m */,
+				294149022461A2C800CA7002 /* CPTMontageGrid.h */,
+				294149012461A2C800CA7002 /* CPTMontageGrid.m */,
 				9935A6A7263F3B5A8D1C68CB3AD23EE1 /* Pod */,
 				E54F156E75E224E2300E1C512E063891 /* Support Files */,
 			);
@@ -261,9 +261,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				294148FB24605EF700CA7002 /* CPTMontageGrid.h in Headers */,
 				294148F724603AE500CA7002 /* CPTMontagePosition.h in Headers */,
 				34B56D7A46E9F491BE1C4EC23ECB5EBD /* CPTMontageFlowLayout.h in Headers */,
+				294149042461A2C800CA7002 /* CPTMontageGrid.h in Headers */,
 				6649E46A451D48A44535C133717B7E31 /* CPTPhotoMontageView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,10 +385,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				294148FC24605EF700CA7002 /* CPTMontageGrid.m in Sources */,
 				29410FFA4EE0BF15CC3C34141438FA5F /* CPTMontageFlowLayout.m in Sources */,
 				294148F824603AE500CA7002 /* CPTMontagePosition.m in Sources */,
 				9FDAFE310CA09664F2C73CFBAB4D92FC /* CPTPhotoMontageView-dummy.m in Sources */,
+				294149032461A2C800CA7002 /* CPTMontageGrid.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
