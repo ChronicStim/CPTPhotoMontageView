@@ -13,13 +13,10 @@
 @interface CPTMontageFlowLayout ()
 {
     NSInteger _numberOfItemFrameSections;
-    
-    NSMutableArray *_deleteIndexPaths, *_insertIndexPaths;
     CGFloat centerXOffset;
 }
 
 @property (nonatomic) CGSize contentSize;
-
 @property (nonatomic, strong) CPTMontageGrid *montageGrid;
 
 @end
@@ -95,26 +92,12 @@
 }
 
 - (void)prepareForCollectionViewUpdates:(NSArray *)updateItems {
-    // Keep track of insert and delete index paths
     [super prepareForCollectionViewUpdates:updateItems];
     
-    _deleteIndexPaths = [NSMutableArray array];
-    _insertIndexPaths = [NSMutableArray array];
-    
-    for (UICollectionViewUpdateItem *update in updateItems) {
-        if (update.updateAction == UICollectionUpdateActionDelete) {
-            [_deleteIndexPaths addObject:update.indexPathBeforeUpdate];
-        } else if (update.updateAction == UICollectionUpdateActionInsert) {
-            [_insertIndexPaths addObject:update.indexPathAfterUpdate];
-        }
-    }
 }
 
 - (void)finalizeCollectionViewUpdates {
     [super finalizeCollectionViewUpdates];
-    // release the insert and delete index paths
-    _deleteIndexPaths = nil;
-    _insertIndexPaths = nil;
 }
 
 - (CGSize)collectionViewContentSize
@@ -282,17 +265,6 @@
     // Must call super
     UICollectionViewLayoutAttributes *attributes = [super initialLayoutAttributesForAppearingItemAtIndexPath:itemIndexPath];
     
-    if ([_insertIndexPaths containsObject:itemIndexPath]) {
-        // only change attributes on inserted cells
-        if (!attributes)
-            attributes = [self layoutAttributesForItemAtIndexPath:itemIndexPath];
-        
-        // Configure attributes ...
-        attributes.alpha = 0.5;
-        CGPoint center = attributes.center;
-        attributes.center = CGPointMake(center.x+centerXOffset, center.y);
-    }
-    
     return attributes;
 }
 
@@ -304,19 +276,6 @@
     // So far, calling super hasn't been strictly necessary here, but leaving it in
     // for good measure
     UICollectionViewLayoutAttributes *attributes = [super finalLayoutAttributesForDisappearingItemAtIndexPath:itemIndexPath];
-    
-    if ([_deleteIndexPaths containsObject:itemIndexPath])
-    {
-        // only change attributes on deleted cells
-        if (!attributes)
-            attributes = [self layoutAttributesForItemAtIndexPath:itemIndexPath];
-        
-        // Configure attributes ...
-        attributes.alpha = 0.5;
-        CGPoint center = attributes.center;
-        attributes.center = CGPointMake(center.x-centerXOffset, center.y);
-        //attributes.transform3D = CATransform3DMakeScale(0.1, 0.1, 1.0);
-    }
     
     return attributes;
 }
