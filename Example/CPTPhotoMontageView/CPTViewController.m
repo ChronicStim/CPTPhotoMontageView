@@ -25,9 +25,10 @@
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UISlider *countSlider;
 @property (weak, nonatomic) IBOutlet UILabel *countLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControl;
 
 - (IBAction)countSliderValueChanged:(id)sender;
-
+- (IBAction)scrollDirectionChanged:(UISegmentedControl *)sender;
 
 @end
 
@@ -110,6 +111,20 @@
     cell.imageView.image = image;
     
     return cell;
+}
+
+#pragma mark - UISegmentedControl Method
+
+- (IBAction)scrollDirectionChanged:(UISegmentedControl *)sender {
+    
+    NSInteger newValue = sender.selectedSegmentIndex;
+    UICollectionViewScrollDirection scrollDirection = UICollectionViewScrollDirectionVertical;
+    if (0 == newValue) {
+        scrollDirection = UICollectionViewScrollDirectionVertical;
+    } else if (1 == newValue) {
+        scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    }
+    [(CPTMontageFlowLayout *)self.collectionView.collectionViewLayout setScrollDirection:scrollDirection];
 }
 
 #pragma mark - UISlider Method

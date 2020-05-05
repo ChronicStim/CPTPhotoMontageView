@@ -82,7 +82,11 @@
         
         [self setFramesInSection:section sectionOffset:sectionOffset sectionSize:&sectionSize];
         
-        contentSize = CGSizeMake(sectionSize.width, contentSize.height + sectionSize.height);
+        if (UICollectionViewScrollDirectionVertical == self.scrollDirection) {
+            contentSize = CGSizeMake(sectionSize.width, contentSize.height + sectionSize.height);
+        } else {
+            contentSize = CGSizeMake(contentSize.width + sectionSize.width, sectionSize.height);
+        }
     }
 
     self.contentSize = contentSize;
@@ -134,7 +138,7 @@
     }
     
     NSUInteger n = [self.collectionView.dataSource collectionView:self.collectionView numberOfItemsInSection:0];
-    _montageGrid = [[CPTMontageGrid alloc] initMontageGridWithNumberOfItems:n];
+    _montageGrid = [[CPTMontageGrid alloc] initMontageGridWithNumberOfItems:n scrollDirection:self.scrollDirection];
     
     return _montageGrid;
 }
@@ -144,32 +148,61 @@
     CGPoint offset = CGPointMake(sectionOffset.x+self.sectionInset.left,sectionOffset.y+self.sectionInset.top);
     CGFloat contentMaxValueInScrollDirection = 0;
 
-    CGFloat cellHeightForContent = ([self viewPortAvailableSize].height - ((self.montageGrid.rowCount - 1) * self.minimumLineSpacing)) / (float)self.montageGrid.rowCount;
-
+    CGFloat cellHeightForContent = 0.0f;
+    if (UICollectionViewScrollDirectionVertical == self.scrollDirection) {
+        cellHeightForContent = ([self viewPortAvailableSize].height - ((self.montageGrid.rowCount - 1) * self.minimumLineSpacing)) / (float)self.montageGrid.rowCount;
+    } else {
+        cellHeightForContent = ([self viewPortAvailableSize].width - ((self.montageGrid.rowCount - 1) * self.minimumLineSpacing)) / (float)self.montageGrid.rowCount;
+    }
+    
     NSUInteger itemIndex = 0;
     for (int row = 0; row<self.montageGrid.rowCount; row++) {
         
         NSInteger cellCount = [self.montageGrid cellCountForRowIndex:row];
-        CGFloat cellWidthForContent = ([self viewPortAvailableSize].width - ((cellCount - 1) * self.minimumInteritemSpacing)) / (float)cellCount;
-
+        
+        CGFloat cellWidthForContent = 0.0f;
+        if (UICollectionViewScrollDirectionVertical == self.scrollDirection) {
+            cellWidthForContent = ([self viewPortAvailableSize].width - ((cellCount - 1) * self.minimumInteritemSpacing)) / (float)cellCount;
+        } else {
+            cellWidthForContent = ([self viewPortAvailableSize].height - ((cellCount - 1) * self.minimumInteritemSpacing)) / (float)cellCount;
+        }
+        
         for (int cell = 0; cell < cellCount; cell++) {
             
-            CGRect cellFrame = CGRectMake(offset.x, offset.y, cellWidthForContent, cellHeightForContent);
+            CGRect cellFrame = CGRectZero;
+            if (UICollectionViewScrollDirectionVertical == self.scrollDirection) {
+                cellFrame = CGRectMake(offset.x, offset.y, cellWidthForContent, cellHeightForContent);
+            } else {
+                cellFrame = CGRectMake(offset.x, offset.y, cellHeightForContent, cellWidthForContent);
+            }
+            
             CPTMontagePosition *montagePosition = [self.montageGrid montagePositionForItemIndex:itemIndex];
             montagePosition.cellFrame = cellFrame;
             //NSLog(@"Adding cellFrame %@ for itemIndex %li at rowIndex %li cellIndex %li",NSStringFromCGRect(cellFrame),(long)itemIndex,(long)row,(long)cell);
             itemIndex++;
 
-            offset.x += cellWidthForContent + self.minimumInteritemSpacing;
-            contentMaxValueInScrollDirection = CGRectGetMaxY(cellFrame);
+            if (UICollectionViewScrollDirectionVertical == self.scrollDirection) {
+                offset.x += cellWidthForContent + self.minimumInteritemSpacing;
+                contentMaxValueInScrollDirection = CGRectGetMaxY(cellFrame);
+            } else {
+                offset.y += cellWidthForContent + self.minimumInteritemSpacing;
+                contentMaxValueInScrollDirection = CGRectGetMaxX(cellFrame);
+            }
         }
         
-        offset = CGPointMake(sectionOffset.x+self.sectionInset.left,(offset.y + cellHeightForContent + self.minimumLineSpacing));
+        if (UICollectionViewScrollDirectionVertical == self.scrollDirection) {
+            offset = CGPointMake(sectionOffset.x+self.sectionInset.left,(offset.y + cellHeightForContent + self.minimumLineSpacing));
+        } else {
+            offset = CGPointMake((offset.x + cellHeightForContent + self.minimumLineSpacing),sectionOffset.y+self.sectionInset.top);
+        }
     }
     
-    *sectionSize = CGSizeMake([self viewPortWidth], (contentMaxValueInScrollDirection - sectionOffset.y) + self.sectionInset.bottom);
+    if (UICollectionViewScrollDirectionVertical == self.scrollDirection) {
+        *sectionSize = CGSizeMake([self viewPortWidth], (contentMaxValueInScrollDirection - sectionOffset.y) + self.sectionInset.bottom);
+    } else {
+        *sectionSize = CGSizeMake((contentMaxValueInScrollDirection - sectionOffset.x) + self.sectionInset.right, [self viewPortHeight]);
+    }
 }
-
 
 #pragma mark -
 
@@ -334,6 +367,14 @@
 - (void)setMinimumInteritemSpacing:(CGFloat)minimumInteritemSpacing
 {
     _minimumInteritemSpacing = minimumInteritemSpacing;
+    
+    [self invalidateLayout];
+}
+
+-(void)setScrollDirection:(UICollectionViewScrollDirection)scrollDirection;
+{
+    _scrollDirection = scrollDirection;
+    [self.montageGrid changeScrollDirection:_scrollDirection];
     
     [self invalidateLayout];
 }

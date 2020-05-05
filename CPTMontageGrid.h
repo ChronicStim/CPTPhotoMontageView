@@ -16,8 +16,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign, readonly) NSInteger rowCount;
 @property (nonatomic, assign, readonly) NSInteger defaultCellsPerRowCount;
 @property (nonatomic, strong, readonly) NSDictionary *montagePositions;
+@property (nonatomic, assign, readonly) UICollectionViewScrollDirection scrollDirection;
 
--(instancetype)initMontageGridWithNumberOfItems:(NSUInteger)numberOfItems;
+-(instancetype)initMontageGridWithNumberOfItems:(NSUInteger)numberOfItems scrollDirection:(UICollectionViewScrollDirection)scrollDirection;
 
 /// Number of cells in the row given by the rowIndex
 /// @param rowIndex Zero-indexed reference to the row.
@@ -30,6 +31,7 @@ NS_ASSUME_NONNULL_BEGIN
 -(NSUInteger)itemIndexForRow:(NSUInteger)rowIndex cellIndex:(NSUInteger)cellIndex;
 
 -(void)clearExistingPositionCellFrames;
+-(void)changeScrollDirection:(UICollectionViewScrollDirection)scrollDirection;
 
 @end
 

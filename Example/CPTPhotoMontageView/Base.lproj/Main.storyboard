@@ -71,12 +71,28 @@
                                     <outlet property="delegate" destination="whP-gf-Uak" id="250-RH-x5M"/>
                                 </connections>
                             </collectionView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hfQ-yT-5KJ">
+                                <rect key="frame" x="94" y="457.5" width="187.5" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="OA9-aM-zJH"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Vertical"/>
+                                    <segment title="Horizontal"/>
+                                </segments>
+                                <connections>
+                                    <action selector="scrollDirectionChanged:" destination="whP-gf-Uak" eventType="valueChanged" id="d5v-3f-qde"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="hfQ-yT-5KJ" firstAttribute="top" secondItem="sHm-j6-arV" secondAttribute="bottom" constant="30" id="4yQ-6b-oXb"/>
                             <constraint firstItem="fuh-Wr-1r0" firstAttribute="top" secondItem="lO5-Ez-XJr" secondAttribute="bottom" constant="30" id="5Bf-6v-7ig"/>
+                            <constraint firstItem="hfQ-yT-5KJ" firstAttribute="width" secondItem="sHm-j6-arV" secondAttribute="width" id="IWx-eB-XvG"/>
                             <constraint firstItem="fuh-Wr-1r0" firstAttribute="width" secondItem="sHm-j6-arV" secondAttribute="width" id="LQS-Ub-sPY"/>
                             <constraint firstItem="fuh-Wr-1r0" firstAttribute="centerX" secondItem="sHm-j6-arV" secondAttribute="centerX" id="N6l-IU-0c1"/>
+                            <constraint firstItem="hfQ-yT-5KJ" firstAttribute="centerX" secondItem="sHm-j6-arV" secondAttribute="centerX" id="dSD-dD-i3m"/>
                             <constraint firstItem="sHm-j6-arV" firstAttribute="top" secondItem="fuh-Wr-1r0" secondAttribute="bottom" constant="30" id="g9s-lv-4fZ"/>
                             <constraint firstItem="sHm-j6-arV" firstAttribute="centerX" secondItem="TpU-gO-2f1" secondAttribute="centerX" id="iOV-OP-wtJ"/>
                             <constraint firstItem="lO5-Ez-XJr" firstAttribute="centerX" secondItem="fuh-Wr-1r0" secondAttribute="centerX" id="kSq-0y-RrC"/>
@@ -89,6 +105,7 @@
                         <outlet property="collectionView" destination="sHm-j6-arV" id="H6D-gL-E2n"/>
                         <outlet property="countLabel" destination="lO5-Ez-XJr" id="6c9-Ce-IHH"/>
                         <outlet property="countSlider" destination="fuh-Wr-1r0" id="85N-pm-WAy"/>
+                        <outlet property="segmentedControl" destination="hfQ-yT-5KJ" id="idA-Fy-riq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>

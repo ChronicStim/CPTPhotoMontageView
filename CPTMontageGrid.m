@@ -15,13 +15,15 @@
 @property (nonatomic, assign, readwrite) NSInteger rowCount;
 @property (nonatomic, assign, readwrite) NSInteger defaultCellsPerRowCount;
 @property (nonatomic, strong, readwrite) NSDictionary *montagePositions;
+// The scroll direction of the grid.
+@property (nonatomic, assign, readwrite) UICollectionViewScrollDirection scrollDirection;
 
 @end
 
 @implementation CPTMontageGrid
 @synthesize numberOfItems = _numberOfItems;
 
--(instancetype)initMontageGridWithNumberOfItems:(NSUInteger)numberOfItems;
+-(instancetype)initMontageGridWithNumberOfItems:(NSUInteger)numberOfItems scrollDirection:(UICollectionViewScrollDirection)scrollDirection;
 {
     self = [super init];
     if (self) {
@@ -164,6 +166,12 @@
     [self.montagePositions.allValues enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         [(CPTMontagePosition *)obj setCellFrame:CGRectZero];
     }];
+}
+
+-(void)changeScrollDirection:(UICollectionViewScrollDirection)scrollDirection;
+{
+    self.scrollDirection = scrollDirection;
+    [self generateMontageGridDetails];
 }
 
 @end
