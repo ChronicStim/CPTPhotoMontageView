@@ -10,8 +10,9 @@
 #endif
 #endif
 
-#import "CPTLinearPartition.h"
 #import "CPTMontageFlowLayout.h"
+#import "CPTMontageGrid.h"
+#import "CPTMontagePosition.h"
 
 FOUNDATION_EXPORT double CPTPhotoMontageViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char CPTPhotoMontageViewVersionString[];

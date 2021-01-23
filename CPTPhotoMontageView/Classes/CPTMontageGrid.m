@@ -120,6 +120,7 @@
         return _montagePositions;
     }
     
+    _montagePositions = [NSDictionary new];
     if (0 < self.numberOfItems) {
         NSMutableDictionary *tempDict = [NSMutableDictionary new];
         for (int itemIndex=0; itemIndex<self.numberOfItems; itemIndex++) {
